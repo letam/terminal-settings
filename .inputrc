@@ -1,0 +1,12 @@
+set completion-ignore-case on
+set show-all-if-ambiguous on
+
+# Arrow up/down cycles through history for commands beginning with the currently typed characters
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Shit-Tab to cycle through files
+"\e[Z": menu-complete
+
+# Shift-Tab to cycle through files in reverse
+# "\e[Z": "\e-1\C-i"
