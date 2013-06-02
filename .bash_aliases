@@ -1,8 +1,18 @@
 #!/bin/bash
 
+alias wenv='workon env1'
+alias guni8='gunicorn -b 0.0.0.0:8000'
+alias dja='django-admin.py'
+alias pym='python manage.py'
+
+if test ~/.bash_aliasess ; then
+  . ~/.bash_aliasess
+fi
+
 alias shlvl='echo $SHLVL'
 alias sasta="ssh-agent $SHELL"
 alias saa='ssh-add ~/.ssh/id_rsa'
+alias saat='ssh-add ~/.ssh/id_rsa_tt'
 alias sasto='ssh-agent -k; exit'
 
 # enable color support of ls and also add handy aliases

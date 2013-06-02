@@ -1,0 +1,23 @@
+~/.vim/autoload/
+  pathogen.vim
+~/.vim/bundle/
+  cvim/
+  nerdtree/
+  ultisnips/
+  vim-bundler/
+  vim-rails/
+  vim-ruby/
+  zencoding-vim/
+~/.vim/colors/
+  candy.vim
+  codeschool.vim
+  distinguished.vim
+  grb256.vim
+  jellybeans.vim
+  railscasts.vim
+  twilight.vim
+  vividchalk.vim
+  zenburn.vim
+~/.vim/docs/
+  ansi-term-colors.txt
+~/.vim/UltiSnips/

@@ -1,6 +1,6 @@
 
 
-
+"
 " force you to not use arrow keys
 " map <up> <nop>
 " map <down> <nop>
@@ -101,6 +101,6 @@ nmap <silent> <leader>sl :set list! list?<CR>
 " hide current buffer instead of closing when opening a file
 set hidden
 
-if filereadable(".vimrca")
-  source .vimrca
+if filereadable("/home/tam/.vimrca")
+  so ~/.vimrca
 endif

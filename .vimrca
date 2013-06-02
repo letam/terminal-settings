@@ -1,0 +1,43 @@
+
+
+autocmd filetype py,coffee,slim set listchars=tab:>.,trail:.,extends:#,nbsp:.
+nmap <silent> <leader>nt :NERDTree<CR>
+
+execute pathogen#infect()
+Helptags
+
+" we use a dark background, don't we?
+set bg=dark
+
+colorscheme distinguished
+
+
+"improve autocomplete menu color
+highlight Pmenu ctermbg=50 gui=bold
+
+" add pydoc-command
+let g:pydoc_cmd = "/usr/bin/pydoc"
+
+" disable highlighting of python search term
+"let g:pydoc_highlight=0
+
+" syntax highlighting for json
+au BufRead,BufNewFile *.json set filetype=json
+au BufRead,BufNewFile *.slim set filetype=slim
+
+"ruby
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby,eruby let g:rubycomplete_include_object = 1
+autocmd FileType ruby,eruby let g:rubycomplete_include_objectspace = 1
+
+"python
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+
+
+"web
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
